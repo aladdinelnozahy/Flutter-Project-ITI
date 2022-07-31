@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/messenger.dart';
 
 class LoginPage extends StatelessWidget {
   // const LoginPage({Key? key}) : super(key: key);
@@ -118,7 +119,7 @@ class LoginPage extends StatelessWidget {
                       TextButton(
                           onPressed: () {},
                           child: Text("Sign Up",
-                              style: TextStyle(color: Colors.brown[800]))),
+                              style: TextStyle(color: Color.fromARGB(255, 249, 247, 247)))),
                       SizedBox(
                         width: 15,
                       ),
@@ -133,7 +134,13 @@ class LoginPage extends StatelessWidget {
                   ),
                   InkWell(
                     onTap: () {
-                      print("22");
+                      // print("aladdin");
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context)=> Massenger(),
+                          ),
+                        );
                     },
                     child: Container(
                       decoration: BoxDecoration(
@@ -143,7 +150,7 @@ class LoginPage extends StatelessWidget {
                       height: MediaQuery.of(context).size.height * (6 / 100),
                       child: Center(
                           child: Text(
-                        "22",
+                        "000",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 18,

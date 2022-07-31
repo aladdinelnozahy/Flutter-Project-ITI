@@ -13,10 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // hide debug
       home: LoginPage(),
-      // debugShowCheckedModeBanner: false,
+ 
       // home: Massenger(),
-      // theme:ThemeData(brightness: Brightness.dark)
+      theme:ThemeData(brightness: Brightness.dark) // also
 
     );
   }
