@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/login.dart';
-import 'package:flutter_app/messenger.dart';
+import 'package:flutter_app/view/layout.dart';
+import 'package:flutter_app/view/login.dart';
+import 'package:flutter_app/view/massenger.dart';
+import 'package:flutter_app/view/normalUsers.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -14,9 +17,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // hide debug
-      home: LoginPage(),
+      // home: LoginPage(),
  
-      // home: Massenger(),
+      home: MainLayout(),
       theme:ThemeData(brightness: Brightness.dark) // also
 
     );
